@@ -1,0 +1,35 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^1.40.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^7.4.1",
+    "node-schedule": "^2.1.1",
+    "nodemailer": "^6.9.4",
+    "nodemon": "^3.0.1",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.45.2",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.10.1",
+    "react-router-dom": "^6.14.2",
+    "react-scroll": "^1.8.9",
+    "react-type-animation": "^3.1.0",
+    "react-typing": "^1.0.0",
+    "swiper": "^10.1.0",
+    "typed.js": "^2.0.16"
+  }
+}
