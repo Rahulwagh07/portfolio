@@ -1,5 +1,6 @@
 import React from 'react'
 import aboutProfileImg from "../../assets/Images/aboutProfile.png"
+
 export const About = () => {
   return (
     <div className='lg:w-7/12 flex sm:w-11/12 mx-auto md:w-10/12 sm:h-full mt-16'>
@@ -12,6 +13,7 @@ export const About = () => {
             {/* left */}
             <div className='lg:w-[50%]  md:w-1/2'>
             <img
+
               src={aboutProfileImg}
               alt=""
               className=" w-full sm:h-[300px]  lg:h-[350px] rounded-3xl"
