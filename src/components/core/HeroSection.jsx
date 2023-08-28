@@ -1,7 +1,7 @@
 import React from 'react'
 import TypingAnimation from './TypingAnimation'
 import CTAButton from './Button'
-import Instructor from "../../assets/Images/Instructor.png"
+import ProfileImg from "../../assets/Images/profileImg.png"
 import {AiOutlineSend} from "react-icons/ai"
 export const HeroSection = () => {
   return (
@@ -24,10 +24,11 @@ export const HeroSection = () => {
   {/* Right part */}
   <div className='lg:w-2/5 sm:w-10/12 sm:mx-auto'>
     <img
-      src={Instructor}
+      src={ProfileImg}
       alt=""
-      className="w-72 mx-auto rounded-full"
+      className="mx-auto   h-72 w-72 rounded-full"
       loading="lazy"
+
     />
   </div>
 </div>

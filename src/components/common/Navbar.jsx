@@ -15,8 +15,8 @@ function Navbar() {
         </ScrollLink>
          </div>
      {/* { Navigation links} */}
-     <nav className='md:block sm:mx-auto'>
-        <ul className='flex   gap-x-8 title-color md:mx-auto sm:mx-auto'>
+     <nav className='md:block sm:mx-auto '>
+        <ul className='flex   lg:gap-x-8 title-color md:mx-auto sm:mx-auto sm:gap-x-4'>
             {NavbarLinks.map((link, index) => (
                 <li key={index} className='hover:text-richblack-900  dark:hover:text-yellow-25 cursor-pointer
                transition-all duration-200 relative group  lg:block'>

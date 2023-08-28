@@ -1,5 +1,5 @@
 import React from 'react'
-import Instructor from "../../assets/Images/Instructor.png"
+import aboutProfileImg from "../../assets/Images/aboutProfile.png"
 export const About = () => {
   return (
     <div className='lg:w-7/12 flex sm:w-11/12 mx-auto md:w-10/12 sm:h-full mt-16'>
@@ -12,15 +12,15 @@ export const About = () => {
             {/* left */}
             <div className='lg:w-[50%]  md:w-1/2'>
             <img
-              src={Instructor}
+              src={aboutProfileImg}
               alt=""
-              className="shadow-white shadow-[-20px_-20px_0_0] w-full"
+              className=" w-full sm:h-[300px]  lg:h-[350px] rounded-3xl"
               loading="lazy"
             />
             </div>
             {/* right */}
             <div className='lg:w-[50%] sm:w-full   md:w-1/2'>
-            <p className='text-color '>Hey there! 👋 I'm Rahul, a 20-year-old CSE undergrad. Currently i 
+            <p className='text-color lg:leading-[40px]'>Hey there! 👋 I'm Rahul, a 20-year-old CSE undergrad. Currently i 
              am working on the technologies that is based on javascript such as react, node.js etc. I see myself as a digital craftsman, creating meaningful and innovative experiences for users. I  staying up-to-date with the latest technologies. Let's collaborate and bring your web projects to life! 🚀</p>
 
             </div>
