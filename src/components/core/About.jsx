@@ -1,5 +1,5 @@
 import React from 'react'
-import Instructor from "../../assets/Images/Instructor.png"
+import profileImg from "../../assets/Images/profileImg.png"
 export const About = () => {
   return (
     <div className='lg:w-7/12 flex sm:w-11/12 mx-auto md:w-10/12 sm:h-full mt-16'>
@@ -12,7 +12,7 @@ export const About = () => {
             {/* left */}
             <div className='lg:w-[50%]  md:w-1/2'>
             <img
-              src={Instructor}
+              src={profileImg}
               alt=""
               className="shadow-white shadow-[-20px_-20px_0_0] w-full"
               loading="lazy"
