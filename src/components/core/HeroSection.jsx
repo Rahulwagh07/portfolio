@@ -1,7 +1,7 @@
 import React from 'react'
 import TypingAnimation from './TypingAnimation'
 import CTAButton from './Button'
-import Instructor from "../../assets/Images/Instructor.png"
+import Instructor from "../../assets/Images/profileImg.png"
 import {AiOutlineSend} from "react-icons/ai"
 export const HeroSection = () => {
   return (
