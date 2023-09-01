@@ -7,8 +7,7 @@ import  Topcourses from "../assets/Videos/Topcourses.mp4"
 export  const projectData = [
  {
     title : "Studynotion- Edtech Platform",
-    info : "StudyNotion is an  ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
-",
+    info : "StudyNotion is an  ed-tech platform that enables users to create, consume, and rate educational content. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.",
     video: Studynotion,
     link: "https://studynotion-fronted-nine.vercel.app/",
  },
