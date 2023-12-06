@@ -60,6 +60,19 @@ body {
     
   }
 
+.rotate-on-hover:hover {
+  animation: rotateIcon 1s linear infinite;
+}
+
+@keyframes rotateIcon {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
   
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
