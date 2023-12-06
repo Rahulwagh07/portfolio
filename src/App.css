@@ -62,7 +62,7 @@ body {
 
 
 .rotate-on-hover:hover {
-  animation: rotateIcon 3s linear infinite;
+  animation: rotateIcon 3s linear forwards;
 }
 
 @keyframes rotateIcon {
@@ -70,9 +70,6 @@ body {
     transform: rotate(0deg);
   }
   50% {
-    transform: rotate(360deg);
-  }
-  55%, 100% {
     transform: rotate(360deg);
   }
 }
