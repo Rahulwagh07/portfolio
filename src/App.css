@@ -62,7 +62,7 @@ body {
 
 
 .rotate-on-hover:hover {
-  animation: rotateIcon 2s linear forwards;
+  animation: rotateIcon 1s linear forwards;
 }
 
 @keyframes rotateIcon {
