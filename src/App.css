@@ -60,15 +60,16 @@ body {
     
   }
 
+
 .rotate-on-hover:hover {
-  animation: rotateIcon 1s linear infinite;
+  animation: rotateIcon 3s linear infinite;
 }
 
 @keyframes rotateIcon {
-  from {
+  0%, 100% {
     transform: rotate(0deg);
   }
-  to {
+  50% {
     transform: rotate(360deg);
   }
 }
