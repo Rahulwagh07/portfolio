@@ -20,7 +20,7 @@ function Theme() {
 
   return (
     <button onClick={toggleTheme}>
-      {theme === 'light' ? <MdOutlineDarkMode size={32} /> : <CiLight size={32} />}
+      {theme === 'light' ? <MdOutlineDarkMode size={32} className="rotate-on-hover" /> : <CiLight size={32} />}
     </button>
   );
 }
