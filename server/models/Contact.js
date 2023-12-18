@@ -11,11 +11,17 @@ const contactSchema = new mongoose.Schema({
         required: true,
 
     },
+    contactNo: {
+        type:String,
+    },
     message : {
         type: String,
         required: true,
-
     },
+    date: {
+        type: Date,
+        default: Date.now,
+      },
 });
 
 // Export the Tags model

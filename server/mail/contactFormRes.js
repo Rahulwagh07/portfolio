@@ -1,6 +1,6 @@
 exports.contactUsEmail = (
     email,
-    firstname,
+    name,
     message,  
   ) => {
     return `<!DOCTYPE html>
@@ -73,11 +73,11 @@ exports.contactUsEmail = (
         <div class="container">
             <div class="message">Contact Form Response </div>
             <div class="body">
-                <p>Hey ${firstname} 👋</p>
+                <p>Hey ${name} 👋</p>
                 <p>I'm Rahul Thank you for contacting me. I have received your message and i will respond to you as soon as possible.
                 </p>
                 <p>Here are the details you provided:</p>
-                <p>Name: ${firstname}</p>
+                <p>Name: ${name}</p>
                 <p>Email: ${email}</p>
                 <p>Message: ${message}</p>
                 <p> I appreciate your interest and will get back to you shortly. </p>

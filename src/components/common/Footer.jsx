@@ -6,7 +6,7 @@ import twitternewlogo from "../../assets/Images/Twitter-new-logo.jpeg"
   
 function Footer() {
   return (
-    <div className='w-full  bg-[#0369a1]  dark:bg-[#2C333F] mt-32 '>
+    <div className='w-full bg-[#0369a1] footer_bgDark mt-32 '>
        <div className='lg:mt-24'>
        <footer className="flex  mx-auto sm:flex-col sm:gap-2 w-7/12 justify-between mt-16 mb-12">
         {/* Left Section */} 
@@ -50,7 +50,7 @@ function Footer() {
             <FaLinkedin size={32} className="text-color hover:text-gray-300" />
           </a>
           <a href="https://twitter.com/RahulWagh_07" target="_blank" rel="noopener noreferrer" className="mx-2">
-            <img src={twitternewlogo}  className="text-color rounded-full h-9 w-9  hover:text-gray-300 " />
+            <img src={twitternewlogo} alt='twitterNewLogo' className="text-color rounded-full h-9 w-9  hover:text-gray-300 " />
           </a>
           <a href="mailto:rahulwagh3774@gmail.com" className="mx-2">
             <FaEnvelope size={32} className="text-color hover:text-gray-300" />

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { MdOutlineExpandLess, MdOutlineExpandMore } from "react-icons/md";
+import { MdOutlineExpandLess} from "react-icons/md";
 import { BiCodeCurly } from "react-icons/bi";
-import {GrLanguage} from "react-icons/gr"
 import { SkillDropdown } from "./SkillDropdown";
  import {FaJava} from "react-icons/fa"
  import {TbBrandJavascript} from "react-icons/tb"
