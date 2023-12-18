@@ -3,32 +3,35 @@ const {contactUsEmailtoMe} = require("../mail/contactFormRestome")
 const mailSender = require("../utils/mailSender")
 const dotenv = require("dotenv");
 dotenv.config();
+const Contact = require("../models/Contact")
+
 exports.contactUsController = async (req, res) => {
-  const { email, firstname, message } = req.body
-  console.log("PRINTINT RES", req.body)
+  const { email, name, contactNo, message } = req.body
   try {
     const emailRes = await mailSender(
       email,
       "Your Message sent successfully",
-      contactUsEmail(email, firstname, message)
+      contactUsEmail(email, name, message)
     )
-    console.log("Email Res ", emailRes)
     const emailResfromUser = await mailSender(
       process.env.MAIL_USER,
       "DATA RECIEVED",
-      contactUsEmailtoMe(email, firstname, message)
+      contactUsEmailtoMe(email, name, message)
     )
-    console.log("PRINTING RES OF  HOST", emailResfromUser)
+    await Contact.create({
+      name: name,
+      email: email,
+      message: message,
+      contactNo: contactNo,
+    });
     return res.json({
       success: true,
       message: "Email send successfully",
     })
   } catch (error) {
-    console.log("Error", error)
-    console.log("Error message :", error.message)
-    return res.json({
-      success: false,
-      message: "Something went wrong...",
-    })
+      return res.json({
+        success: false,
+        message: "Something went wrong...",
+      })
   }
 }

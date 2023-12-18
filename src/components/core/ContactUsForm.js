@@ -25,11 +25,10 @@ export function ContactUsForm(){
         contactusEndpoint.CONTACT_US_API,
         data
       )
-       toast.success("Your message was sent. Thank you for contacting!");
+       toast.success("Your message was Recieved. Thank you for contacting!");
       setLoading(false)
-       
     } catch (error) {
-      console.log("ERROR MESSAGE - ", error.message)
+      console.log("Error Message ", error.message)
       setLoading(false)
     }
   }
@@ -38,7 +37,7 @@ export function ContactUsForm(){
     if (isSubmitSuccessful) {
       reset({
         email: "",
-        firstname: "",
+        name: "",
         message: "",
         phoneNo: "",
       })
@@ -54,17 +53,17 @@ export function ContactUsForm(){
         <div className="">
           <input
             type="text"
-            name="firstname"
-            id="firstname"
+            name="name"
+            id="name"
             placeholder="Name"
             className=" mt-1 block w-full form-style px-5 py-7  border border-slate-300 rounded-md text-sm shadow-sm placeholder-richblack-800 text-richblack-900
     focus:outline-none focus:border-sky-800 focus:ring-1 focus:ring-sky-500
     disabled:bg-slate-50 disabled:text-slate-500 disabled:border-slate-200 disabled:shadow-none
     invalid:border-pink-500 invalid:text-pink-600
     focus:invalid:border-pink-500 focus:invalid:ring-pink-500"
-            {...register("firstname", { required: true })}
+            {...register("name", { required: true })}
           />
-          {errors.firstname && (
+          {errors.name && (
             <span className="-mt-1 text-[12px] text-[#b91c1c] dark:text-yellow-100">
               Please enter your name.
             </span>

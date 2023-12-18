@@ -31,16 +31,16 @@ function ProjectSlider() {
 >
   {projectData.map((project, index) => (
     <SwiperSlide key={index} className="flex lg:gap-16  sm:flex-col-reverse md:gap-8 items-center sm:gap-6">
-      <div className=" lg:w-80 lg:h-96 sm:mx-auto md:w-1/2 rounded-sm ml-20  ">
-        <div className="lg:h-96 rounded-xl">
+      <div className=" lg:w-80 lg:h-96 sm:mx-auto md:w-1/2 rounded-sm ml-20">
+        <div className="lg:h-96  rounded-xl flex items-center justify-center">
         <video
-          className="w-full h-full "
+          className="rounded-md"
           muted
           loop
           autoPlay
           loading="lazy"
         >
-          <source src={project.video} type="video/mp4" className="border border-sky-500" />
+          <source src={project.video} type="video/mp4"/>
         </video>
         </div>
       </div>
