@@ -6,6 +6,7 @@ import {HeroSection} from "./components/core/HeroSection";
 import Footer from "./components/common/Footer";
 import ProjectSlider from "./components/core/ProjectSlider";
 import Contact from "./components/core/Contact";
+import ScrollButton from "./components/common/ScrollButton";
  
   
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Navbar/>
         <div className="flex flex-col lg:mx-auto w-screen  text-color ">
         <HeroSection/>
+        <ScrollButton/>
         <About/>
         <Skill/>
         <ProjectSlider/>

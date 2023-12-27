@@ -3,7 +3,7 @@ import aboutProfileImg from "../../assets/Images/aboutProfile.png"
 
 export const About = () => {
   return (
-    <div className='lg:w-7/12 flex sm:w-11/12 mx-auto md:w-10/12 sm:h-full mt-16'>
+    <div className='lg:w-7/12 flex sm:w-11/12 mx-auto md:w-10/12 sm:h-full mt-16' id='#aboutme'>
          <div className='flex flex-col sm:w-full'>
           
             <h2  id='#about' className='text-4xl title-color font-bold flex mx-auto mb-1 tracking-wide'>About Me</h2>
