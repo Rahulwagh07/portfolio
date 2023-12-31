@@ -6,7 +6,7 @@ dotenv.config();
 const Contact = require("../models/Contact")
 
 exports.contactUsController = async (req, res) => {
-  const { email, name, contactNo, message } = req.body
+  const { email, name, phoneNo, message } = req.body
   try {
     const emailRes = await mailSender(
       email,
@@ -22,7 +22,7 @@ exports.contactUsController = async (req, res) => {
       name: name,
       email: email,
       message: message,
-      contactNo: contactNo,
+      contactNo: phoneNo,
     });
     return res.json({
       success: true,
